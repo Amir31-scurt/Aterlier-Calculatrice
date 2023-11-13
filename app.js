@@ -9,6 +9,8 @@ function calc(value){
 function clr(){
     resetInputBackground();
     document.getElementById('result').value = "";
+    document.getElementById('result').style.color = "";
+    document.getElementById('result').removeAttribute("disabled")
 }
 function result(){
     var inputField = document.getElementById('result');
@@ -26,6 +28,7 @@ function result(){
         inputField.value = 'Error';
         inputField.style.backgroundColor = '#fdd2d2';
         inputField.style.color = "red";
+        inputField.setAttribute("disabled", "");
     }
 }
 // Enter and Esc key
