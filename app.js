@@ -41,11 +41,10 @@ function myFunction(event) {
         case 'Escape':
             clr();
             break;
-        // Add more cases for other keys if needed
     }
 }
 document.addEventListener('keydown', myFunction);
-// Background color
+// Background color when characters are not validated
 function resetInputBackground(){
     document.getElementById('result').style.backgroundColor = "";
 }
